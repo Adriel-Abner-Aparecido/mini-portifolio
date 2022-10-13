@@ -3,7 +3,25 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #e228d8 #262626;
 }
+
+
+/** Webkit Scroll **/
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-track{
+    background: #262626;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #e228d8;
+    border-radius: 20px;
+    border: 3px solid #262626;
+}
+
+
 ul{
     list-style: none;
 }
@@ -47,7 +65,9 @@ body{
     align-items: center;
     gap: 10px;
 }
-.cartao .minhas-informacoes img{
+.cartao .minhas-informacoes .foto-perfil{
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
     border: 4px solid #02d08f;
 }
@@ -86,7 +106,7 @@ body{
     flex-direction: column;
 }
 .informacoes-abas .informacao{
-    min-height: 260px;
+    min-height: 200px;
     display: none;
     padding: 15px;
 }
@@ -108,6 +128,25 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.redes-sociai li a{
+.redes-sociais li a{
+    width: 220px;
+    font-size: 20px;
+    padding: 5px 0;
     display:block;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+    border-radius: 2px;
+}
+.redes-sociais li .curriculo{
+    background-color: red;
+}
+.redes-sociais li .linkedin{
+    background-color: cornflowerblue;
+}
+.redes-sociais li .github{
+    background-color: darkslategrey;
+}
+.redes-sociais li a:hover{
+    opacity: 0.8;
 }
